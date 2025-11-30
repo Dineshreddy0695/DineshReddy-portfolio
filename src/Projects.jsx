@@ -54,7 +54,7 @@
                     <div>
                         <div className="flex justify-center pt-5 gap-4">
                             <a 
-                                href="http://localhost:4000/" 
+                                href="https://Dineshreddy0695.github.io/Dinesh-Portfolio-1/" 
                                 target="_blank" 
                                 rel="noopener noreferrer"
                                 className="bg-blue-500/10 flex justify-center pt-2 text-blue-500 p-10 pb-3 py-1 rounded-full text-sm hover:bg-blue-500 hover:text-white"
