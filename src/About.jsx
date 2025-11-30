@@ -1,45 +1,109 @@
 export const About=()=>{
     const frontend=["HTML","CSS","JavaScript","React","TailwindCSS"]
     const backend=["Node.js","Python","SQL",]
-    return(
-        <section id= "about" className="min-h-screen flex items-center justify-center py-20">
-             <div className="  max-w-3xl mx-auto px-4 flex flex-col items-center justify-center  ">
-            <h2 className="  text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent px-0  pt-0 py-10" >About me</h2>
-            <div className= "   rounded-xl p-9 border-white/10 border hover:-translate-y-1 transition-all              ">
-                <p className="text-grey-300 mb-6">I am a passionate developer.Motivated and detail-oriented engineering graduate seeking</p>
-                    <div className=" flex gap-16"> 
-                        <div className="rounded-xl py-4 ">
-                           <h3 className="text-xl font-bold mb-4 ">Frontend </h3> 
-                           <div className="flex flex-wrap gap-2">
-                            {frontend.map((tech)=>(<span key={tech} className="bg-blue-500/10 text-blue-500 px-3 py-1 rounded-full text-sm hover:bg-blue-500 hover:text-white ">{tech}</span>))}
-                           </div>
-                        </div>
-                        <div className="rounded-xl py-4 ">
-                            <h3 className="text-xl font-bold mb-4 ">Backend </h3> 
-                            <div className="flex flex-wrap gap-2">
-                            {backend.map((tech)=>(<span key={tech} className="bg-blue-500/10 text-blue-500 px-3 py-1 rounded-full text-sm  hover:bg-blue-500 hover:text-white">{tech}</span>))}
-                           </div>
-                        </div>
-                    </div>
-                
-                
-            </div>
-            <div className="grid grid-cols md:grid-cols-2 gap-4 mt-8">
-                <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-               <h3 className="text-xl font-bold"> Education </h3>
-               <li>
-                <strong className="text-sm">Bachelor of Technology in Computer Science</strong><p className="text-xs"> -Anantha Lakshmi Institute of Technology and Sciences  (2022-2026)</p>
-               </li>
-               </div>
-               <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                <h3 className="text-lg font-bold"> Experience </h3>
-               <p className="text-sm"> Software Engineer at XYZ Company </p>
-               </div>
+     return (
+    <section id="extra-data" className="min-h-screen bg-black">
+      <div className="container mx-auto  mt-20 max-w-5xl">
+        <h1 className="text-4xl font-bold text-center text-blue-400 mb-10">
+          ABOUT ME  
+        </h1>
 
-            </div>
-            </div>
-        </section>
-                   
        
-    )
-}
+        <div className="bg-gray-900 shadow-md rounded-2xl mb-8">
+          <div className="p-6">
+            <h2 className="text-2xl text-blue-400 font-semibold mb-4">
+              Hobbies & Interests
+            </h2>
+            <p className="text-gray-300 mb-4">
+              Outside of coding, I keep myself engaged with activities that
+              inspire creativity and balance. These interests shape the way I
+              approach problem-solving and teamwork.
+            </p>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>Reading tech blogs & exploring new tools</li>
+              <li>Playing strategy and puzzle video games</li>
+              <li>Photography & editing</li>
+              <li>Playing cricket and outdoor sports</li>
+              <li>Listening to music for focus and relaxation</li>
+            </ul>
+          </div>
+        </div>
+
+       
+        <div className="bg-gray-900 shadow-md rounded-2xl mb-8">
+          <div className="p-6">
+            <h2 className="text-2xl text-blue-400 font-semibold mb-4">
+              Soft Skills
+            </h2>
+            <p className="text-gray-300 mb-4">
+              I believe soft skills are just as important as technical expertise.
+              These qualities help me communicate, adapt, and collaborate
+              effectively in team environments.
+            </p>
+            <ul className="grid grid-cols-2 gap-3 text-gray-300">
+              <li>Teamwork</li>
+              <li>Problem-Solving</li>
+              <li>Communication</li>
+              <li>Time Management</li>
+              <li>Quick Learner</li>
+              <li>Adaptability</li>
+            </ul>
+          </div>
+        </div>
+
+  
+        <div className="bg-gray-900 shadow-md rounded-2xl mb-8">
+          <div className="p-6">
+            <h2 className="text-2xl text-blue-400 font-semibold mb-4">
+              Certifications & Training
+            </h2>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>Web Development Bootcamp – Udemy</li>
+              <li>Python for Everybody – Coursera</li>
+              <li>SQL and Databases – HackerRank Certificate</li>
+              <li>Introduction to Cloud Computing – IBM Skills Network</li>
+            </ul>
+          </div>
+        </div>
+
+       
+        <div className="bg-gray-900 shadow-md rounded-2xl mb-8">
+          <div className="p-6">
+            <h2 className="text-2xl text-blue-400 font-semibold mb-4">
+              Volunteer Work & Activities
+            </h2>
+            <p className="text-gray-300 mb-4">
+              I actively participate in community and extracurricular activities
+              that enhance my leadership and teamwork skills.
+            </p>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>Volunteered at university hackathons</li>
+              <li>Assisted peers with coding practice sessions</li>
+              <li>Member of college coding club</li>
+              <li>Organized seminars on new technologies</li>
+            </ul>
+          </div>
+        </div>
+
+       
+        <div className="bg-gray-900 shadow-md rounded-2xl">
+          <div className="p-6">
+            <h2 className="text-2xl text-blue-400 font-semibold mb-4">
+              Future Learning Goals
+            </h2>
+            <p className="text-gray-300 mb-4">
+              As a beginner, I am eager to keep expanding my knowledge and
+              strengthening my technical expertise in new areas.
+            </p>
+            <ul className="list-disc list-inside text-gray-300 space-y-2">
+              <li>Advanced React.js & Next.js</li>
+              <li>Cloud Platforms (AWS, Azure, GCP)</li>
+              <li>Mobile App Development (React Native/Flutter)</li>
+              <li>Introduction to AI & Machine Learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};

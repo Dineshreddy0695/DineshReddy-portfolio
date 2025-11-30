@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
-
+import{useState} from 'react';
+import{Contact} from './Contact';
 export const Navbar = () => {
+    const [isContactOpen, setIsContactOpen] = useState(false);
     return (
         <div className="fixed top-0 left-0 z-40 w-full bg-cyan-700-grey backdrop-blur-lg border-b border-white/10 shadow-lg">
             <div className="max-w-5xl mx-auto px-4 flex justify-between">
@@ -9,7 +11,7 @@ export const Navbar = () => {
                         Dinesh <span className="text-blue-500">Portfolio</span>
                     </Link>
                 </div>
-                <div className="flex items-center space-4">
+                <div className="flex items-center gap-4">
                     <Link to="/">
                         <button className="text-white px-4 py-2 rounded hover:bg-blue-600 transition">
                             Home
@@ -25,13 +27,18 @@ export const Navbar = () => {
                             Projects
                         </button>
                     </Link>
-                    <Link to="/contact">
-                        <button className="text-white px-4 py-2 rounded hover:bg-blue-600 transition">
-                            Contact Me
-                        </button>
-                    </Link>
+                    <button
+                        onClick={() => setIsContactOpen(true)}
+                        className="text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                    >
+                        Contact Me
+                    </button>
+                    
                 </div>
             </div>
+             <Contact isOpen={isContactOpen} onClose={() => setIsContactOpen(false)} />
+                
+      
         </div>
     );
 };
